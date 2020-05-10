@@ -1,5 +1,4 @@
 FROM tomcat:9.0
 
-WORKDIR /usr/local/tomcat
+COPY target/simple-calculator /usr/local/tomcat/webapps/
 
-ADD target/simple-calculator webapps/
